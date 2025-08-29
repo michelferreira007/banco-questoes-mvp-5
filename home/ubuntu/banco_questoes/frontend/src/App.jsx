@@ -193,7 +193,7 @@ function App() {
                       <SelectValue placeholder="Todas as matérias" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">Todas as matérias</SelectItem>
+                      <SelectItem value="all-materias">Todas as matérias</SelectItem>
                       {opcoesFiltros.materias.map(materia => (
                         <SelectItem key={materia} value={materia}>{materia}</SelectItem>
                       ))}
@@ -209,7 +209,7 @@ function App() {
                       <SelectValue placeholder="Todos os assuntos" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">Todos os assuntos</SelectItem>
+                      <SelectItem value="all-assuntos">Todos os assuntos</SelectItem>
                       {opcoesFiltros.assuntos.map(assunto => (
                         <SelectItem key={assunto} value={assunto}>{assunto}</SelectItem>
                       ))}
@@ -225,7 +225,7 @@ function App() {
                       <SelectValue placeholder="Todos os anos" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">Todos os anos</SelectItem>
+                      <SelectItem value="all-anos">Todos os anos</SelectItem>
                       {opcoesFiltros.anos.map(ano => (
                         <SelectItem key={ano} value={ano.toString()}>{ano}</SelectItem>
                       ))}
@@ -241,7 +241,7 @@ function App() {
                       <SelectValue placeholder="Todos os vestibulares" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">Todos os vestibulares</SelectItem>
+                      <SelectItem value="all-vestibulares">Todos os vestibulares</SelectItem>
                       {opcoesFiltros.vestibulares.map(vestibular => (
                         <SelectItem key={vestibular} value={vestibular}>{vestibular}</SelectItem>
                       ))}
